@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px; 
+}
+
+.h {
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  background-color: rgb(247, 160, 160);
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 1.3% 6%;
+  height: 8%;
+}
+
+.h .header {
+  display: flex;
+  align-items: center;
+}
+
+.h .header .l {
+  color: rgb(13, 14, 13);
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.h .navbar a {
+  color: rgb(72, 74, 72);
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.h .navbar a:hover { 
+  padding-bottom: 5px;
+}
+
+.h .icon i {
+  font-size: 16px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.h .search {
+  top: 90%;
+  position: absolute;
+  background-color: transparent;
+  width: 46%;
+  height: auto;
+  margin: 1.3% 6%;
+  right: 0;
+  display: none;
+}
+
+.h .search input {
+  height: 95%;
+  width: 95%;
+  font-size: 14px;
+  color: rgb(13, 14, 13);
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 2.5% 6%;
+  margin-right: 5%;
+}
+
+.h .search.active {
+  display: inline-block;
+}
+
+/* Home Section */
+.Home {
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/no-bake-chocolate-cheesecake-decorated-with-fresh-cherries-mint-copy-space-your-text.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.Home .Homecontent {
+  width: 60%;
+  text-align: center;
+}
+
+.Home .Homecontent h2 {
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 7%;
+  line-height: 1.2;
+  color: black;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.Home .Homecontent p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 3%;
+}
+
+.Home .Homecontent .Home-btn {
+  height: auto;
+}
+
+.Home .Homecontent .Home-btn button {
+  font-size: 10px;
+  font-weight: bolder;
+  background-color: rgb(247, 160, 160);
+  padding: 2% 1.5%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Home .Homecontent .Home-btn button:hover {
+  font-size: 14px;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem 7%;
+}
+
+.P h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.P h2 span {
+  color: rgb(247, 160, 160);
+  margin-left: 16px;
+  font-family: 'MV Boli', cursive;
+  text-decoration: underline;  
+}
+
+/* Product Styles */
+.Product .row {
+  margin-bottom: 5%;
+  align-items: center;
+  display: flex;
+}
+
+.Product .Product-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.Product .Product-row .b {
+  flex: 1 1 21%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 2px;
+  background-color: rgb(232, 228, 204);
+  border-radius: 6%;
+  gap: 8px;
+  margin: 1.5%;
+}
+
+.Product .Product-row .b .img img {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 48%;
+  border: 2px solid rgb(146, 50, 50);
+}
+
+.Product .Product-row .content {
+  margin-bottom: 5%;
+}
+
+.Product .Product-row .content h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.Product .Product-row .content p {
+  font-size: 10px;
+  color: black;
+  line-height: 20px;
+}
+
+.Product .Product-row .content .Ordernow {
+  margin-top: 6%;
+  height: auto;
+}
+
+.Product .Product-row .content .Ordernow button {
+  background-color: rgb(243, 134, 134);
+  border-radius: 50%;
+  color: white;
+  padding: 2% 5%;
+  cursor: pointer;
+}
+
+.Product .Product-row .content .Ordernow button:hover {
+  font-size: 14px;
+}
+
+.About .about-row {
+  padding: 30px;
+  margin-top: 120px;
+}
+
+.About .about-row .b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: row;
+  margin-right: 12px;
+}
+
+.About .about-row .b .img img {
+  max-width: 300px;
+  border-radius: 10px;
+  border: 2px solid rgb(249, 196, 196);
+  margin-right: 12px;
+}
+
+.About .about-row .content h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
+}
+
+.About .about-row .content h2 span {
+  color: rgb(247, 160, 160);
+  margin-left: 12px;
+  font-family: 'MV Boli', cursive;
+  text-decoration: underline;
+}
+
+.About .about-row .content h3 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 15px;
+}
+
+.About .about-row .content p {
+  font-size: 1rem;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+.About .about-row .b .content a {
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 20px;
+  color: rgb(23, 22, 22);
+  background-color: rgb(247, 160, 160);
+  border-radius: 5px;
+  padding: 1px;
+  margin: 40px;
+}
+
+.About .about-row .b .content a:hover {
+  color: black;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Review Section */
+.Review {
+  background-color: rgb(250, 250, 250);
+  padding: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.comment-box {
+  width: 400px;
+  height: 130px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.profile {
+  align-items: center;
+  display: flex;
+}
+
+.profile-image {
+  height: 50px;
+  width: 50px;
+  box-shadow: 2 2 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.profile-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.name h2 {
+  display: flex;
+  flex-direction: column;
+  font-family: 'MV Boli', cursive;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.comment p {
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .Review h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .Review h1 span {
+    color: rgb(247, 160, 160);
+    margin-left: 12px;
+    font-family: 'MV Boli', cursive;
+    text-decoration: underline;
+  }
+  
+  .heading h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .heading h1 span {
+    color: rgb(247, 160, 160);
+    margin-left: 12px;
+    font-family: 'MV Boli', cursive;
+    text-decoration: underline;
+  }
+  
+  .contact .row .col {
+    text-align: center;
+    border: 0.4px solid rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 110px;
+  }
+  
+  .contact .row .col h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .contact .row .col p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 7px;
+  }
+  
+  .contact .row .col i {
+    height: 35px;
+    width: 35px;
+    font-size: 15px;
+    background: rgb(247, 160, 160);
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .contact .r {
+    display: flex;
+    margin-top: 3%;
+    background-color: rgb(249, 244, 244);
+    padding: 6px 5px;
+    text-align: center;
+    margin: 0 100px;
+  }
+  
+  .contact .r form {
+    padding: 15px;
+    border: 0.4px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: rgb(250, 250, 250);
+    height: 300px;
+    width: 480px;
+    margin-left: 20px;
+  }
+  
+  .contact .r form h4 {
+    font-size: 22px;
+    color: black;
+    padding-bottom: 2px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact .r form .inputbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-left: -20px;
+  }
+  
+  .contact .r form .inputbox .box,
+  .contact .r form textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 0.2px solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-transform: none;
+    color: black;
+    width: 180px;
+    margin-left: 6px;
+  }
+  
+  .contact .r form textarea {
+    height: 30%;
+    width: 95%;
+    margin-left: -20px;
+    margin: -14px;
+  }
+  
+  .contact .r .map {
+    width: 400px;
+    margin-left: 70px;
+    height: 300px;
+  }
+  
+  .contact .r .btn {
+    background-color: rgb(247, 160, 160);
+    border-radius: 15%;
+    color: black;
+    padding: 1% 2%;
+    cursor: pointer;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .contact .r .btn:hover {
+    font-size: 14px;
+  }
+  
+  .con {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .w {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer {
+    background-color: rgb(247, 160, 160);
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+    margin-left: 70px;
+  }
+  
+  .footer-col h2 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-weight: 500;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-col h2::before {
+    content: '';
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 80px;
+    box-sizing: border-box;
+    margin-left: 70px;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 6px;
+    margin-right: 40px;
+  }
+  
+  .footer-col ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+    transition: 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: white;
+    padding-left: 10px;
+  }
+  
+  .footer-col .social-links a {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-color: aliceblue;
+    margin-right: 9px;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    border-radius: 70%;
+    transition: 0.3s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    background-color: black;
+    color: rgb(247, 160, 160);
+  }
+  
+  @media (max-width: 1200px) {
+    .Home .Homecontent {
+      width: 80%;
+    }
+  
+    .Product .Product-row .b {
+      flex: 1 1 30%;
+    }
+  
+    .footer-col {
+      width: 30%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .h {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .h .navbar a {
+      margin-right: 20px;
+    }
+  
+    .Product .Product-row .b {
+      flex: 1 1 45%;
+    }
+  
+    .contact .r {
+      flex-direction: column;
+      margin: 0 20px;
+    }
+  
+    .contact .r form {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .h .header .l {
+      font-size: 24px;
+    }
+  
+    .Home .Homecontent h2 {
+      font-size: 28px;
+    }
+  
+    .Product .Product-row .b {
+      flex: 1 1 100%;
+    }
+  
+    .footer-col {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .contact .r .map {
+      width: 100%;
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .h .navbar a {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+  
+    .Home .Homecontent h2 {
+      font-size: 24px;
+    }
+  
+    .Product .Product-row .b {
+      margin: 5% 0;
+    }
+  
+    .footer-col h2 {
+      font-size: 16px;
+    }
+  }
+  
